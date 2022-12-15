@@ -15,7 +15,7 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+        xx = await conv.send_message("Send Me Any Image For Thumbnail As A `Reply` To This Message.")
         x = await conv.get_reply()
         if not x.media:
             xx.edit("No media found.")
@@ -30,7 +30,7 @@ async def sett(event):
         if os.path.exists(f'{event.sender_id}.jpg'):
             os.remove(f'{event.sender_id}.jpg')
         os.rename(path, f'./{event.sender_id}.jpg')
-        await t.edit("Temporary thumbnail saved!")
+        await t.edit("Temporary Thumbnail Saved!")
         
 @Drone.on(events.callbackquery.CallbackQuery(data="rem"))
 async def remt(event):  
