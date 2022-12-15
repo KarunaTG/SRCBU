@@ -12,9 +12,9 @@ from telethon import events
 
 from ethon.telefunc import force_sub
 
-ft = f"To use this bot you've to join @{fs}."
+ft = f"To Use This Bot You've To Join @SRCBUPdates 💫"
 
-message = "Send me the message link you want to start saving from, as a reply to this message."
+message = "Send Me The Message Link You Want To Start Saving From, As  A Reply To This Message⚡"
           
 process=[]
 timer=[]
@@ -42,7 +42,7 @@ async def clone(event):
         return
     edit = await event.reply("Processing!")
     if f'{int(event.sender_id)}' in user:
-        return await edit.edit("Please don't spam links, wait until ongoing process is done.")
+        return await edit.edit("Please Don't Spam Links❗Wait Until Ongoing Process Is Done❄️")
     user.append(f'{int(event.sender_id)}')
     try:
         if 't.me/+' in link:
