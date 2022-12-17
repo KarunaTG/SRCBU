@@ -12,7 +12,7 @@ from telethon import events
 
 from ethon.telefunc import force_sub
 
-ft = f"To Use This Bot You've To Join @SRCBUPdates 💫"
+ft = f"To Use This Bot You've To Join @SRCBU 💫"
 
 message = "Send Me The Message Link You Want To Start Saving From, As  A Reply To This Message⚡"
           
